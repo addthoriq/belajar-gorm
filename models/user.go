@@ -14,3 +14,7 @@ type User struct {
 	Email    *string // Nullable
 	Password string
 }
+
+func (User) TableName() string {
+	return "public.users"
+}
